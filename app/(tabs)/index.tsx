@@ -1,16 +1,12 @@
-import { StyleSheet, View } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { StyleSheet, View } from "react-native";
+import { WebView } from "react-native-webview";
 
 export default function HomeScreen() {
-
-  const WEBSITE_URL = 'https://dashboard.inrext.com';
+  const WEBSITE_URL = "https://dashboard.inrext.com";
 
   return (
     <View style={styles.container}>
-      <WebView 
-        source={{ uri: WEBSITE_URL }}
-        style={styles.webview}
-      />
+      <WebView source={{ uri: WEBSITE_URL }} style={styles.webview} />
     </View>
   );
 }
