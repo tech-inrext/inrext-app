@@ -22,6 +22,7 @@
     },
     "android": {
       "adaptiveIcon": {
+        "foregroundImage": "./assets/images/inrext.png",
         "backgroundColor": "#E6F4FE"
       },
       "edgeToEdgeEnabled": true,

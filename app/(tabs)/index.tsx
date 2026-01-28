@@ -13,6 +13,7 @@ import {
   Text,
   View,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { WebView } from "react-native-webview";
 
 export default function HomeScreen() {
@@ -58,7 +59,7 @@ export default function HomeScreen() {
   }
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <WebView
         ref={webRef}
         source={source}
@@ -80,8 +81,9 @@ export default function HomeScreen() {
         originWhitelist={["https://*"]}
         javaScriptEnabled
         sharedCookiesEnabled
+        pullToRefreshEnabled={true}
       />
-    </View>
+    </SafeAreaView>
   );
 }
 
